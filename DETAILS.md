@@ -1,0 +1,5 @@
+El Sistema fue diseñado pensando en la simplicidad y usabilidad para el usuario, así como la mantenibilidad del código. 
+La arquitectura que se implementó es multicapas, tratando de aplicar los lineamientos del clean code, con responsabilidades bien definidad para cada componente.
+Se hizo uso del framework hibernate para las interacciones con la capa de datos.
+Si se desea escalar la solución es importante expandir el modelo de datos, ya que en esta versión se hizo uso solo de dos entidades, la de Producto y la de Movimiento, esto tiene sus limitaciones ante posibles funcionalidades que se requieran, como la posibilidad de tener varios tipos de salidas de inventario, o varias presentaciones por producto.
+En cuanto a las mejoras hace falta incluir la implementacion en el fronted de la api          http://localhost:8080/api/productstate, disponible en el Backed, que cumple con el ultimo punto del requerimiento (Ver el estado de los productos en función de la fecha de caducidad (vigente, por vencer, vencido). La API debe devolver el estado del producto calculado en base a la fecha actual.), ya que esta funcionalidad no llegué a incluirla en el front.
